@@ -16,7 +16,7 @@
 rm(list=ls())
 
 # Set working directory
-setwd("C:/Users/nfw24/OneDrive - Newcastle University/Papers/Freshwater Biology (Japanese montane streams)/Data")
+setwd("")
 
 # Load packages
 library(ggplot2); library(lme4); library(tidyverse); library(bipartite); library(grid); library(gridExtra)
