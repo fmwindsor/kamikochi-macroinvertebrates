@@ -20,7 +20,7 @@ setwd("")
 
 # Load packages
 library(ggplot2); library(lme4); library(tidyverse); library(bipartite); library(grid); library(gridExtra)
-library(mvabund); library(scales); library(ade4); library(ggrepel); library(Hmisc)
+library(mvabund); library(scales); library(ade4); library(ggrepel); library(Hmisc); library(scales)
 
 
 
