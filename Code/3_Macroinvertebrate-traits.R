@@ -38,7 +38,7 @@ tax.mat.s <- tax.mat.s[,rownames(traits.s)]
 
 # RLQ analysis to link traits to communities to sites
 afcl.test <- dudi.coa(tax.mat.s, scannf = FALSE)
-acpR.test <- dudi.hillsmith(env.s, row.w = afcl.test$lw, scannf = FALSE)
+acpR.test <- dudi.hillsmith(env.s[,-c(1:3)], row.w = afcl.test$lw, scannf = FALSE)
 acpQ.test <- dudi.pca(traits.s, row.w = afcl.test$cw, scannf = FALSE)
 rlq.test <- rlq(acpR.test, afcl.test, acpQ.test, scannf = FALSE, nf = 2)
 
