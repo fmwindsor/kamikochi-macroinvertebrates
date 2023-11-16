@@ -108,8 +108,8 @@ plotb
 # Plotting the canonical weights for taxa (traits)
 plotc <- ggplot(aes(x = Comp1, y = Comp2), data = Qcw) + 
   #geom_point() + 
-  geom_text_repel(aes(x = Comp1, y = Comp2, label = Trait), size = 4, data = Q_arrows) + 
-  geom_segment(aes(x = xmin, xend = Comp1, y = ymin, yend = Comp2), arrow = arrow(type = "open", length = unit(3, "mm")), data = Q_arrows, alpha = 0.3) + 
+  geom_text_repel(aes(x = Comp1, y = Comp2, label = Trait), size = 4, data = Qcw_sub) + 
+  geom_segment(aes(x = xmin, xend = Comp1, y = ymin, yend = Comp2), arrow = arrow(type = "open", length = unit(3, "mm")), data = Qcw_sub, alpha = 0.3) + 
   theme_bw() +
   theme(axis.text = element_text(size = 12, colour = "black"), axis.title = element_text(size = 12)) +
   theme(panel.grid = element_blank(), axis.text = element_blank(), axis.ticks = element_blank()) + 
