@@ -181,7 +181,7 @@ grid.arrange(plot2, plot3, plot4, nrow=1)
 nmds <- metaMDS(dframe1[,-c(1:10,58:61)], trymax = 200, distance = "bray", k = 3)
 
 # Collate the information for plotting the results
-data.scores <- as.data.frame(scores(nmds)) 
+data.scores <- as.data.frame(scores(nmds)$sites) 
 data.scores$Site <- dframe1$Site
 data.scores$Regime <- dframe1$Regime
 
